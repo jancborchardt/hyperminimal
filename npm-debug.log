@@ -1,0 +1,110 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'publish' ]
+2 info using npm@3.10.9
+3 info using node@v6.9.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/jan/hyperminimal',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/jan/.npm/hyperminimal/0.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /home/jan/.npm correctMkdir not in flight; initializing
+10 info lifecycle hyperminimal@0.0.1~prepublish: hyperminimal@0.0.1
+11 silly lifecycle hyperminimal@0.0.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/jan/.npm/hyperminimal/0.0.1/package.tgz',
+12 verbose tar pack   '/home/jan/hyperminimal' ]
+13 verbose tarball /home/jan/.npm/hyperminimal/0.0.1/package.tgz
+14 verbose folder /home/jan/hyperminimal
+15 verbose addLocalTarball adding from inside cache /home/jan/.npm/hyperminimal/0.0.1/package.tgz
+16 verbose correctMkdir /home/jan/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd hyperminimal@0.0.1
+18 verbose afterAdd /home/jan/.npm/hyperminimal/0.0.1/package/package.json not in flight; writing
+19 verbose correctMkdir /home/jan/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/jan/.npm/hyperminimal/0.0.1/package/package.json written
+21 silly publish { name: 'hyperminimal',
+21 silly publish   version: '0.0.1',
+21 silly publish   description: 'Removes the window header from Hyper terminal for more space and less distraction.',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/jancborchardt/hyperminimal.git' },
+21 silly publish   keywords: [ 'hyperterm', 'hyper' ],
+21 silly publish   author:
+21 silly publish    { name: 'Jan-Christoph Borchardt',
+21 silly publish      email: 'hey@jancborchardt.net',
+21 silly publish      url: 'http://jancborchardt.net' },
+21 silly publish   license: 'MIT',
+21 silly publish   bugs: { url: 'https://github.com/jancborchardt/hyperminimal/issues' },
+21 silly publish   homepage: 'https://github.com/jancborchardt/hyperminimal#readme',
+21 silly publish   readme: '# [hyperminimal](https://www.npmjs.com/package/hyperminimal)\n\n**Removes the window header from [Hyper terminal](https://hyper.is) for more space and less distraction.**\n\nBefore & after:\n\n![](hyperminimal.png)\n\n## How to use\n\nAdd `hyperminimal` to `plugins` in `~/.hyper.js`.\n',
+21 silly publish   readmeFilename: 'readme.md',
+21 silly publish   gitHead: 'e579fc3d03c8b8c43cf1bd9d1dee2131b5e161d6',
+21 silly publish   _id: 'hyperminimal@0.0.1',
+21 silly publish   _shasum: '2eb09cf46be1c547089bc06f569fe08992f54946',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name hyperminimal
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'hyperminimal',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'hyperminimal',
+26 silly mapToRegistry   name: 'hyperminimal',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/hyperminimal
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /home/jan/.npm/hyperminimal/0.0.1/package.tgz
+30 verbose request uri https://registry.npmjs.org/hyperminimal
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 03:06:08
+33 verbose request using bearer token for auth
+34 verbose request id ef9ab85b12257aaf
+35 http request PUT https://registry.npmjs.org/hyperminimal
+36 http 403 https://registry.npmjs.org/hyperminimal
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Fri, 16 Dec 2016 02:06:09 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-hhn1538-HHN',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1481853968.474241,VS0,VE1149',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /home/jan/.npm/registry.npmjs.org/hyperminimal on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 0.0.1." : hyperminimal
+40 verbose stack     at makeError (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:969:12)
+41 verbose statusCode 403
+42 verbose pkgid hyperminimal
+43 verbose cwd /home/jan/hyperminimal
+44 error Linux 4.4.0-53-generic
+45 error argv "/usr/bin/nodejs" "/usr/bin/npm" "publish"
+46 error node v6.9.2
+47 error npm  v3.10.9
+48 error code E403
+49 error "You cannot publish over the previously published version 0.0.1." : hyperminimal
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

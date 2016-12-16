@@ -1,6 +1,6 @@
-# Hyperminimal
+# [hyperminimal](https://www.npmjs.com/package/hyperminimal)
 
-Removes the window header from [Hyper terminal](https://hyper.is) for more space and less distraction.
+**Removes the window header from [Hyper terminal](https://hyper.is) for more space and less distraction.**
 
 Before & after:
 
