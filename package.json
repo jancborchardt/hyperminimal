@@ -1,6 +1,6 @@
 {
   "name": "hyperminimal",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Removes the window header from Hyper terminal for more space and less distraction.",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,8 @@
     "url": "git+https://github.com/jancborchardt/hyperminimal.git"
   },
   "keywords": [
-    "hyperterm",
-    "hyper"
+    "hyper",
+    "hyperterm"
   ],
   "author": "Jan-Christoph Borchardt <hey@jancborchardt.net> (http://jancborchardt.net)",
   "license": "MIT",
