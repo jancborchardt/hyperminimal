@@ -14,6 +14,10 @@ exports.decorateConfig = (config) => {
       .terms_termsShifted {
         margin-top: 34px;
       }
+      // Hide the header bars text
+      .header_header {
+        display: none;
+      }
     `
   });
 }
