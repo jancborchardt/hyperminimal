@@ -17,3 +17,10 @@ exports.decorateConfig = (config) => {
     `
   });
 }
+
+// Hide window controls on macOS
+exports.decorateBrowserOptions = defaults => Object.assign({}, defaults, {
+  titleBarStyle: '',
+  transparent: true,
+  frame: false
+})
