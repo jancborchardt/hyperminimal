@@ -1,5 +1,5 @@
 exports.decorateConfig = (config) => {
-  var defaultCSS = `
+  var macosCSS = `
     .header_header {
       top: 0;
       right: 0;
@@ -15,7 +15,7 @@ exports.decorateConfig = (config) => {
       margin-left: 0;
     }
   `
-  var windowsCSS = `
+  var defaultCSS = `
     .header_windowHeader {
       display: none;
     }
@@ -31,9 +31,9 @@ exports.decorateConfig = (config) => {
   `
 
   return Object.assign({}, config, {
-  css: `
+    css: `
       ${config.css || ''}
-      ${process.platform === 'win32' ? windowsCSS : defaultCSS}
+      ${process.platform === 'darwin' ? macosCSS : defaultCSS}
     `
   });
 }
