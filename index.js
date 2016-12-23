@@ -52,9 +52,9 @@ exports.getTabsProps = (parentProps, props) => {
     if (classTermsList.length > 0) {
       var classTerms = classTermsList[0]
       if (props.tabs.length <= 1) {
-        classTerms.setAttribute("style", "margin-top: 0")
+        classTerms.setAttribute('style', 'margin-top: 0')
       } else {
-        classTerms.setAttribute("style", "")
+        classTerms.setAttribute('style', '')
       }
     }
   }
