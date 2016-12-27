@@ -15,3 +15,5 @@ If you like the extension, please [retweet & like](https://twitter.com/jancborch
 ## How to use
 
 Add `hyperminimal` to `plugins` in `~/.hyper.js`.
+
+If you want to move the window, simply hold the Super/Windows key and drag it anywhere with the cursor.
