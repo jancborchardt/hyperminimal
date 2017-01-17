@@ -13,6 +13,10 @@ exports.decorateConfig = (config) => {
     }
     .tabs_list {
       margin-left: 0;
+      padding-left: 0;
+    }
+    .tabs_list::before {
+      display: none;
     }
   `
   var defaultCSS = `
@@ -21,6 +25,12 @@ exports.decorateConfig = (config) => {
     }
     .tabs_nav {
       top: 0;
+    }
+    .tabs_list {
+      padding-left: 0;
+    }
+    .tabs_list::before {
+      display: none;
     }
     .terms_terms {
       margin-top: 0;
