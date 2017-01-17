@@ -18,6 +18,9 @@ exports.decorateConfig = (config) => {
     .tabs_list::before {
       display: none;
     }
+    .tab_tab::after {
+      display: none;
+    }
   `
   var defaultCSS = `
     .header_windowHeader {
@@ -37,6 +40,9 @@ exports.decorateConfig = (config) => {
     }
     .terms_termsShifted {
       margin-top: 34px;
+    }
+    .tab_tab::after {
+      display: none;
     }
   `
 
