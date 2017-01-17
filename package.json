@@ -1,6 +1,6 @@
 {
   "name": "hyperminimal",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Removes the window header from Hyper terminal for more space and less distraction.",
   "main": "index.js",
   "scripts": {
