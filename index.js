@@ -1,5 +1,5 @@
 exports.decorateConfig = (config) => {
-  var macosCSS = `
+  const macosCSS = `
     .header_header {
       top: 0;
       right: 0;
@@ -13,16 +13,9 @@ exports.decorateConfig = (config) => {
     }
     .tabs_list {
       margin-left: 0;
-      padding-left: 0;
-    }
-    .tabs_list::before {
-      display: none;
-    }
-    .tab_tab::after {
-      display: none;
     }
   `
-  var defaultCSS = `
+  const defaultCSS = `
     .header_windowHeader {
       display: none;
     }
@@ -32,7 +25,7 @@ exports.decorateConfig = (config) => {
     .tabs_list {
       padding-left: 0;
     }
-    .tabs_list::before {
+    .tabs_list:before {
       display: none;
     }
     .terms_terms {
@@ -41,7 +34,7 @@ exports.decorateConfig = (config) => {
     .terms_termsShifted {
       margin-top: 34px;
     }
-    .tab_tab::after {
+    .tab_tab:after {
       display: none;
     }
   `
