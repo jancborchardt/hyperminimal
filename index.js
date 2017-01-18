@@ -1,5 +1,5 @@
 exports.decorateConfig = (config) => {
-  var macosCSS = `
+  const macosCSS = `
     .header_header {
       top: 0;
       right: 0;
@@ -15,18 +15,27 @@ exports.decorateConfig = (config) => {
       margin-left: 0;
     }
   `
-  var defaultCSS = `
+  const defaultCSS = `
     .header_windowHeader {
       display: none;
     }
     .tabs_nav {
       top: 0;
     }
+    .tabs_list {
+      padding-left: 0;
+    }
+    .tabs_list:before {
+      display: none;
+    }
     .terms_terms {
       margin-top: 0;
     }
     .terms_termsShifted {
       margin-top: 34px;
+    }
+    .tab_tab:after {
+      display: none;
     }
   `
 
