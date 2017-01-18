@@ -2,7 +2,7 @@
 
 **Removes the window header from [Hyper terminal](https://hyper.is) for more space and less distraction.**
 
-Before & after:
+Before & after, minimal & clean interface:
 
 ![](hyperminimal.png)
 
