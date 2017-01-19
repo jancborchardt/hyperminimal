@@ -14,6 +14,10 @@ exports.decorateConfig = (config) => {
     .tabs_list {
       margin-left: 0;
     }
+    .tab_tab:first-of-type {
+      border-left-width: 0;
+      padding-left: 1px;
+    }
   `
   const defaultCSS = `
     .header_windowHeader {
@@ -27,6 +31,9 @@ exports.decorateConfig = (config) => {
     }
     .tabs_list:before {
       display: none;
+    }
+    .tab_first {
+      border-left-width: 0;
     }
     .terms_terms {
       margin-top: 0;
