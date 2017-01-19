@@ -14,8 +14,9 @@ exports.decorateConfig = (config) => {
     .tabs_list {
       margin-left: 0;
     }
-    .tab_first {
+    .tab_tab:first-of-type {
       border-left-width: 0;
+      padding-left: 1px;
     }
   `
   const defaultCSS = `
