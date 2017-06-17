@@ -26,7 +26,8 @@ To move the window, hover over the edge of the window so the resize arrow appear
 
 ### Windows
 
-If you use Windows and know how to move the window without the top bar, please let us know so we can add it here. :) Simply comment on [the issue about it](https://github.com/jancborchardt/hyperminimal/issues/12).
+To move the window, make sure Hyper has focus then press _Alt+Space+M_, then use the _Arrow_ keys to move the window and _Enter_ to finalise the position.
+After pressing an arrow key at least once, the window will also follow your mouse cursor (this is usually faster than holding down arrow keys).
 
 ## Other recommended plugins
 
