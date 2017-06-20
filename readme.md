@@ -26,7 +26,7 @@ To move the window, hover over the edge of the window so the resize arrow appear
 
 ### Windows
 
-To move the window, make sure Hyper has focus then press _Alt+Space+M_, then use the _Arrow_ keys to move the window and _Enter_ to finalise the position.
+To move the window, make sure Hyper has focus, press <kbd>Alt</kbd>+<kbd>Space</kbd>+<kbd>M</kbd>, then use the <kbd>&uarr;</kbd><kbd>&darr;</kbd><kbd>&larr;</kbd><kbd>&rarr;</kbd> keys to move the window and <kbd>Enter</kbd> to finalise the position.
 After pressing an arrow key at least once, the window will also follow your mouse cursor (this is usually faster than holding down arrow keys).
 
 ## Other recommended plugins
