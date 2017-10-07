@@ -67,10 +67,13 @@ exports.getTabsProps = (parentProps, props) => {
     var classTermsList = document.getElementsByClassName('terms_terms')
     if (classTermsList.length > 0) {
       var classTerms = classTermsList[0]
+      var header = document.getElementsByClassName('header_header')[0]
       if (props.tabs.length <= 1) {
-        classTerms.setAttribute('style', 'margin-top: 0')
+        classTerms.style.marginTop = 0
+        header.style.visibility = 'hidden'
       } else {
-        classTerms.setAttribute('style', '')
+        classTerms.style.marginTop = ''
+        header.style.visibility = ''
       }
     }
   }
