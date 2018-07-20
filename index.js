@@ -11,6 +11,9 @@ exports.decorateConfig = (config) => {
     .tabs_title {
       display: none;
     }
+    .tabs_nav {
+      height: auto;
+    }
     .tabs_list {
       margin-left: 0;
     }
